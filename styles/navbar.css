@@ -26,7 +26,7 @@ nav #nav_logo {
     width: calc(800px * 0.45);
     margin-right: 20px;
 
-    background-image: url("../assets/banner.png");
+    background-image: url("/assets/banner.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,11 +48,14 @@ nav #navigation a {
 
 @media screen and (max-width: 1000px) {
     nav #nav_logo {
-        display: none;
+        height: 64px;
+        width: auto;
+        aspect-ratio: 1 / 1;
+
+        background-image: url("/assets/favicon.png");
     }
 
     nav #navigation {
-        gap: 10px;
         justify-content: space-evenly;
     }
 
@@ -62,14 +65,24 @@ nav #navigation a {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
-    nav #navigation {
-        gap: 5px;
+    nav #nav_logo {
+        display: none;
     }
+
+
 
     nav #navigation a {
         font-size: 1.3rem
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    nav #navigation a {
+        font-size: 1.2rem
     }
 
 }

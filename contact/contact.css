@@ -6,7 +6,8 @@ main {
 
 .contact_card {
     width: auto;
-    height: 90%;
+    max-width: 70%;
+    height: 95%;
     aspect-ratio: 1 / 1.5;
 
     display: flex; /* One dimensional text layout could be replaced with margins instead of gap without flex */
