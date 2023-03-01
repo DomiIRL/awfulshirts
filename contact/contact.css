@@ -9,7 +9,7 @@ main {
     height: 90%;
     aspect-ratio: 1 / 1.5;
 
-    display: flex; /* One dimensional text layout */
+    display: flex; /* One dimensional text layout could be replaced with margins instead of gap without flex */
     flex-direction: column;
     gap: 30px;
 }
