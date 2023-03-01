@@ -4,7 +4,21 @@ main {
     justify-content: center;
 }
 
-#contact {
-    display: grid;
+.contact_card {
+    width: auto;
+    height: 90%;
+    aspect-ratio: 1 / 1.5;
 
+    display: flex; /* One dimensional text layout */
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact_card h1 { /* h1 always only exists once on a page */
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact_type h3 {
+    margin-bottom: 5px;
 }
