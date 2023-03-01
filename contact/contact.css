@@ -1,0 +1,10 @@
+main {
+    display: flex; /* using flex for centering div */
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    display: grid;
+
+}
