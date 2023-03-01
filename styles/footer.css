@@ -1,0 +1,35 @@
+
+footer {
+    background-color: var(--air-superiority-blue);
+
+    min-height: 32px;
+}
+
+footer #main_footer {
+    padding: 10px 0;
+
+
+    display: grid;
+    grid-template-areas: "title" "nav";
+}
+
+footer #footer_title {
+    grid-area: title;
+
+    text-align: center;
+}
+
+footer #footer_navigation {
+    grid-area: nav;
+
+    display: flex; /* Flex for centering and controlling one dimensional list */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer #copyright_footer {
+    padding: 3px 0;
+
+    text-align: center;
+}

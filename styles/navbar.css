@@ -1,0 +1,75 @@
+
+nav {
+    height: 64px;
+    background-color: var(--uranian-blue);
+
+    display: flex; /* Flex for centering div horizontal */
+    justify-content: center;
+}
+
+nav #nav_content {
+
+    width: max(70%, 1200px);
+    height: 100%;
+
+    padding: 2px 1px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "logo nav";
+}
+
+nav #nav_logo {
+    grid-area: logo;
+
+    width: calc(800px * 0.45);
+    margin-right: 20px;
+
+    background-image: url("../assets/banner.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav #navigation {
+    grid-area: nav;
+
+    display: flex; /* 1 dimensional layout of li tags */
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #navigation a {
+    font-size: 1.5rem
+    /*color: var(--color-text-dark);*/
+}
+
+@media screen and (max-width: 1000px) {
+    nav #nav_logo {
+        display: none;
+    }
+
+    nav #navigation {
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    nav #navigation li {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    nav #navigation {
+        gap: 5px;
+    }
+
+    nav #navigation a {
+        font-size: 1.3rem
+    }
+
+}

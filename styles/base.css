@@ -1,0 +1,56 @@
+@import "theme.css";
+@import "navbar.css";
+@import "footer.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
+body {
+    width: 100%;
+    background-color: aliceblue;
+
+    display: grid;
+    grid-template-areas: "nav" "main" "foot";
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    min-height: calc(100vh - 64px - 92px);
+}
+
+footer {
+    grid-area: foot;
+}
+
+/* Class Utilization */
+
+.underline_animation {
+    position: relative;
+}
+
+.underline_animation:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+
+    content: "";
+    border-bottom: 2px solid var(--color-text-dark);
+
+    transition: 0.35s;
+}
+
+.underline_animation:hover:after {
+    width: 100%;
+}
