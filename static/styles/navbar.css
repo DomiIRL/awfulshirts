@@ -68,7 +68,7 @@ nav #navigation a {
 
     /* Change banner image to favicon to save space */
     nav #nav_logo {
-        height: 64px;
+        height: 60px;
         width: auto;
         aspect-ratio: 1 / 1;
 

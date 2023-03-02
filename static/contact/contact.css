@@ -1,4 +1,6 @@
-main {
+.content_card {
+    background-color: var(--thistle);
+
     display: flex; /* using flex for centering div */
     align-items: center;
     justify-content: center;

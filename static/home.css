@@ -1,42 +1,32 @@
 
-main {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-}
+/* Start of bad code aka released collection notice */
 
-.content_card {
-    height: auto;
-    aspect-ratio: 16 / 9;
-
-    background-image: url("/assets/content/homepage.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.content_card.collection_card {
+    background-color: var(--sunset);
 
     display: grid;
-    grid-template-areas: "preview description";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-.content_preview {
+.collection_card .content_preview {
     position: relative;
-    grid-area: preview;
-    /*background-color: red;*/
+    z-index: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content_images {
+.collection_card .content_images {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content_preview .image_preview {
+.collection_card .image_preview {
     position: absolute;
-    width: 50%;
+    width: 480px;
     height: auto;
     aspect-ratio: 1 / 1;
     transform: rotate(-3deg);
@@ -45,77 +35,193 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 
-    transition: all 0.3s ease-out;
+    filter: drop-shadow(0 0 15px #000);
+
+    transition: transform 0.3s ease, scale 0.3s ease, filter 0.2s ease;
 }
 
-.content_preview .image_preview:nth-child(1) {
-    /*background-color: blueviolet;*/
-    transform: rotate(20deg) translate(3.646vw, -4.17vh);
+.collection_card .image_preview:nth-child(1) {
+    transform: rotate(20deg) translate(15%, -32%);
 }
 
-.content_preview .image_preview:nth-child(2) {
-    /*background-color: green;*/
-    transform: rotate(-10deg) translate(-3.646vw, -4.17vh);
+.collection_card .image_preview:nth-child(2) {
+    transform: rotate(-10deg) translate(-15%, -16%);
 }
 
-.content_preview .image_preview:nth-child(3) {
-    /*background-color: aquamarine;*/
-    transform: translate(0, 2.78vh);
+.collection_card .image_preview:nth-child(3) {
+    transform: translate(0, 22%);
 }
 
-.content_preview .content_images:hover > .image_preview {
-    scale: 1.2;
+.collection_card .image_preview:hover {
+    filter: drop-shadow(0 0 5px #fff);
 }
 
-.content_preview .content_images:hover > .image_preview:nth-child(1) {
-    transform: rotate(30deg) translate(3.125vw, -11.11vh);
+.collection_card .content_images:hover > .image_preview {
+    scale: 1.25;
 }
 
-.content_preview .content_images:hover > .image_preview:nth-child(2) {
-    transform: rotate(-20deg) translate(-3.125vw, -11.11vh);
+.collection_card .content_images:hover > .image_preview:nth-child(1) {
+    transform: rotate(30deg) translate(17%, -49%);
 }
 
-.content_preview .content_images:hover  >.image_preview:nth-child(3) {
-    transform: rotate(5deg) translate(0, 9.26vw);
+.collection_card .content_images:hover > .image_preview:nth-child(2) {
+    transform: rotate(-20deg) translate(-17%, -49%);
 }
 
-.content_description {
-    grid-area: description;
+.collection_card .content_images:hover  >.image_preview:nth-child(3) {
+    transform: rotate(5deg) translate(0, 37%);
+}
+
+.collection_card .content_description {
+    /* Display shirt images behind description */
+    position: relative;
+    z-index: 1;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.content_descriptions {
-    width: 90%;
-    height: 60%;
+.collection_card .content_descriptions {
     aspect-ratio: 1 / 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
 }
 
-.content_descriptions h2 {
+.collection_card .content_descriptions .text_description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.collection_card .content_descriptions .text_description h2 {
     font-size: 200%;
-    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: 0.1;
 }
 
-.content_descriptions p {
+.collection_card .text_description p {
+    font-size: 130%;
+    color: var(--jasper);
+}
+
+.collection_card .text_description li {
     font-size: 130%;
 }
 
-@media screen and (max-width: 1000px) {
+.collection_card .button {
+    flex-grow: 1;
+    width: 100%;
 
-    .content_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection_card .checkout {
+    width: 1000px;
+    height: 250px;
+
+    background-image: url("/assets/content/mascot_click.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .collection_card.collection_card {
         height: auto;
-        aspect-ratio: 9 / 16;
 
-        grid-template-areas: "preview" "description";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .content_descriptions {
+    .collection_card .image_preview {
+        scale: 0.75;
+    }
+
+    .collection_card .content_images:hover > .image_preview {
+        scale: 0.9;
+    }
+
+    .collection_card .content_description {
+        justify-content: center;
+    }
+
+    .collection_card .content_descriptions {
         width: 80%;
         height: 90%;
+    }
+
+}
+
+/* End of bad code :) */
+
+/* Start of grid code */
+
+.content_card.grid_card {
+    background-color: var(--tea-green);
+
+    display: flex; /* centering child */
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_card .grid {
+    width: min(90%, 1600px);
+    height: 70%;
+
+    display: grid;
+
+    grid-template-areas:
+            "small1 small2 tall"
+            "wide wide tall";
+    gap: 20px;
+}
+
+.grid_card .item {
+
+    transition: scale 0.3s ease;
+}
+
+.grid_card .item:hover {
+    scale: 1.03;
+}
+
+.grid_card .item:nth-child(1) {
+    grid-area: small1;
+    background-color: darkmagenta;
+}
+
+.grid_card .item:nth-child(2) {
+    grid-area: small2;
+
+    background-color: red;
+}
+
+.grid_card .item:nth-child(3) {
+    grid-area: tall;
+
+    background-color: crimson;
+}
+
+.grid_card .item:nth-child(4) {
+    grid-area: wide;
+
+    background-color: green;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .grid_card .grid {
+        grid-template-areas:
+            "small1 small2"
+            "wide tall"
     }
 
 }

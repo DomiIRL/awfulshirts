@@ -1,0 +1,18 @@
+
+/* Make the scrollbar themed like the rest of the website */
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, var(--verdigris)), color-stop(1, var(--air-superiority-blue)));
+    border-radius: 10px;
+}
