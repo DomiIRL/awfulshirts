@@ -1,19 +1,24 @@
 
+/* Style navigation bar */
 nav {
     height: 64px;
     background-color: var(--uranian-blue);
 
+    /* Center navbar content in center of navigation bar */
     display: flex; /* Flex for centering div horizontal */
     justify-content: center;
 }
 
 nav #nav_content {
 
+    /* Define size of navbar content for centered navbar on larger screens */
     width: max(70%, 1200px);
     height: 100%;
 
+    /* Add padding for all navbar contents */
     padding: 2px 1px;
 
+    /* Define layout for navbar contents */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: auto 1fr;
@@ -23,9 +28,11 @@ nav #nav_content {
 nav #nav_logo {
     grid-area: logo;
 
+    /* Set size of banner */
     width: calc(800px * 0.45);
     margin-right: 20px;
 
+    /* Set background image */
     background-image: url("/assets/banner.png");
     background-size: contain;
     background-position: center;
@@ -35,6 +42,7 @@ nav #nav_logo {
 nav #navigation {
     grid-area: nav;
 
+    /* Set layout of navigation links list */
     display: flex; /* 1 dimensional layout of li tags */
     gap: 30px;
     align-items: center;
@@ -42,11 +50,13 @@ nav #navigation {
 }
 
 nav #navigation a {
+    /* Set navigation links text size */
     font-size: 1.5rem
-    /*color: var(--color-text-dark);*/
 }
 
 @media screen and (max-width: 1000px) {
+
+    /* Change banner image to favicon to save space */
     nav #nav_logo {
         height: 64px;
         width: auto;
@@ -55,24 +65,21 @@ nav #navigation a {
         background-image: url("/assets/favicon.png");
     }
 
+    /* Change navbar links layout to scale the gaps automatically */
     nav #navigation {
         justify-content: space-evenly;
-    }
-
-    nav #navigation li {
-        margin-right: 0;
     }
 
 }
 
 @media screen and (max-width: 700px) {
 
+    /* Hide logo to get more navbar space */
     nav #nav_logo {
         display: none;
     }
 
-
-
+    /* Decrease text size to get more space */
     nav #navigation a {
         font-size: 1.3rem
     }
@@ -81,6 +88,7 @@ nav #navigation a {
 
 @media screen and (max-width: 620px) {
 
+    /* Decrease text size even futher */
     nav #navigation a {
         font-size: 1.2rem
     }

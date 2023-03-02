@@ -1,0 +1,12 @@
+version: "2.15"
+
+services:
+  awfulshirts:
+    container_name: "awfulshirts"
+    image: awfulshirts:latest
+    build: .
+    restart: unless-stopped
+    ports:
+      - "80:80"
+#    volumes:
+#      - "./static:/usr/share/nginx/html"

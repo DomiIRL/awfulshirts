@@ -1,14 +1,19 @@
 
+/* Define basic footer size and background as well as basic layout */
 footer {
+    min-height: 32px;
     background-color: var(--air-superiority-blue);
 
-    min-height: 32px;
+    grid-template-areas: "main" "copyright";
 }
 
 footer #main_footer {
+    grid-area: main;
+
+    /* Add top and bottom padding to main footer part */
     padding: 10px 0;
 
-
+    /* Define layout of sub parts */
     display: grid;
     grid-template-areas: "title" "nav";
 }
@@ -16,12 +21,14 @@ footer #main_footer {
 footer #footer_title {
     grid-area: title;
 
+    /* Center title */
     text-align: center;
 }
 
 footer #footer_navigation {
     grid-area: nav;
 
+    /* Define layout of footer navigation */
     display: flex; /* Flex for centering and controlling one dimensional list */
     align-items: center;
     justify-content: center;
@@ -29,7 +36,11 @@ footer #footer_navigation {
 }
 
 footer #copyright_footer {
+    grid-area: copyright;
+
+    /* Add some space to top and bottom of copyright notice */
     padding: 3px 0;
 
+    /* Center copyright notice */
     text-align: center;
 }

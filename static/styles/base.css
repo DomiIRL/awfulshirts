@@ -2,6 +2,7 @@
 @import "navbar.css";
 @import "footer.css";
 
+/* Apply non inherited properties to all elements */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,21 +13,25 @@
     color: var(--color-text-dark);
 }
 
+/* Apply default properties to body */
 body {
     width: 100%;
-    background-color: aliceblue;
 
+    /* Define default main website layout */
     display: grid;
     grid-template-areas: "nav" "main" "foot";
 }
 
+/* Define default layout elements */
 nav {
     grid-area: nav;
 }
 
 main {
     grid-area: main;
-    min-height: calc(100vh - 64px - 92px);
+
+    /* Make websites height equal to screen height */
+    min-height: calc(100vh - 64px - 92px); /* Values are from header and footer */
 }
 
 footer {
