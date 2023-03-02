@@ -1,15 +1,25 @@
 
 /* Style navigation bar */
 nav {
+    width: 100%;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     height: 64px;
     background-color: var(--uranian-blue);
 
     /* Center navbar content in center of navigation bar */
     display: flex; /* Flex for centering div horizontal */
     justify-content: center;
+
 }
 
+
 nav #nav_content {
+    position: relative;
 
     /* Define size of navbar content for centered navbar on larger screens */
     width: max(70%, 1200px);

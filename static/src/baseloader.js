@@ -1,6 +1,6 @@
 
 /**
- * This script's only purpose is to inject static templates and properties into any html document.
+ * This script's only purpose is to inject static html templates and properties into any html document.
  *
  * Injected templates:
  *  - navbar.html -> #inject_navbar

@@ -1,0 +1,121 @@
+
+main {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
+
+.content_card {
+    height: auto;
+    aspect-ratio: 16 / 9;
+
+    background-image: url("/assets/content/homepage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-areas: "preview description";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.content_preview {
+    position: relative;
+    grid-area: preview;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_preview .image_preview {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    transform: rotate(-3deg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s ease-out;
+}
+
+.content_preview .image_preview:nth-child(1) {
+    /*background-color: blueviolet;*/
+    transform: rotate(20deg) translate(3.646vw, -4.17vh);
+}
+
+.content_preview .image_preview:nth-child(2) {
+    /*background-color: green;*/
+    transform: rotate(-10deg) translate(-3.646vw, -4.17vh);
+}
+
+.content_preview .image_preview:nth-child(3) {
+    /*background-color: aquamarine;*/
+    transform: translate(0, 2.78vh);
+}
+
+.content_preview .content_images:hover > .image_preview {
+    scale: 1.2;
+}
+
+.content_preview .content_images:hover > .image_preview:nth-child(1) {
+    transform: rotate(30deg) translate(3.125vw, -11.11vh);
+}
+
+.content_preview .content_images:hover > .image_preview:nth-child(2) {
+    transform: rotate(-20deg) translate(-3.125vw, -11.11vh);
+}
+
+.content_preview .content_images:hover  >.image_preview:nth-child(3) {
+    transform: rotate(5deg) translate(0, 9.26vw);
+}
+
+.content_description {
+    grid-area: description;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_descriptions {
+    width: 90%;
+    height: 60%;
+    aspect-ratio: 1 / 1;
+}
+
+.content_descriptions h2 {
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+
+.content_descriptions p {
+    font-size: 130%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .content_card {
+        height: auto;
+        aspect-ratio: 9 / 16;
+
+        grid-template-areas: "preview" "description";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .content_descriptions {
+        width: 80%;
+        height: 90%;
+    }
+
+}
