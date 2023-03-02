@@ -9,7 +9,7 @@ nav {
     z-index: 1000;
 
     height: 64px;
-    background-color: var(--uranian-blue);
+    background-color: var(--primary);
 
     /* Center navbar content in center of navigation bar */
     display: flex; /* Flex for centering div horizontal */

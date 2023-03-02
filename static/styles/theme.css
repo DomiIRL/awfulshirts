@@ -1,14 +1,17 @@
 :root {
     /*TODO: FILTER OUT AND RENAME PALETTE COLORS */
-    --color-text-dark: black;
+    --color-text-dark: #333745;
     --color-text-bright: white;
-    --violet-jtc: #542344ff;
-    --thistle: #e3c0d3ff;
-    --tea-green: #c7efcfff;
-    --air-superiority-blue: #769fb6ff;
+    --primary: #b2ddf7ff;
+    --secondary: #769fb6ff;
+    --red: #c72b0c;
     --sunset: #fed99bff;
-    --jasper: #cd533bff;
-    --uranian-blue: #b2ddf7ff;
-    --non-photo-blue: #81d6e3ff;
-    --verdigris: #4cb5aeff;
+    --start-scrollbar: #4cb5aeff;
+    --pink: #e3c0d3ff;
+    --lime: #c7efcfff;
+
+    --indigo: #9883E5;
+    --indigo-secondary: #AFA2FF;
+    --space: #302F4D;
+
 }

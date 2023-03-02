@@ -106,7 +106,7 @@
 
 .collection_card .text_description p {
     font-size: 130%;
-    color: var(--jasper);
+    color: var(--red);
 }
 
 .collection_card .text_description li {
@@ -165,11 +165,17 @@
 /* Start of grid code */
 
 .content_card.grid_card {
-    background-color: var(--tea-green);
+    background-color: var(--lime);
 
     display: flex; /* centering child */
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.grid_card h2 {
+    font-size: 400%;
+    color: var(--red);
 }
 
 .grid_card .grid {
@@ -185,7 +191,6 @@
 }
 
 .grid_card .item {
-
     transition: scale 0.3s ease;
 }
 
@@ -195,25 +200,25 @@
 
 .grid_card .item:nth-child(1) {
     grid-area: small1;
-    background-color: darkmagenta;
+    background-color: var(--indigo);
 }
 
 .grid_card .item:nth-child(2) {
     grid-area: small2;
 
-    background-color: red;
+    background-color: var(--sunset);
 }
 
 .grid_card .item:nth-child(3) {
     grid-area: tall;
 
-    background-color: crimson;
+    background-color: var(--indigo-secondary);
 }
 
 .grid_card .item:nth-child(4) {
     grid-area: wide;
 
-    background-color: green;
+    background-color: var(--secondary);
 }
 
 @media screen and (max-width: 1400px) {

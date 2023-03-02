@@ -1,5 +1,5 @@
 .content_card {
-    background-color: var(--thistle);
+    background-color: var(--pink);
 
     display: flex; /* using flex for centering div */
     align-items: center;

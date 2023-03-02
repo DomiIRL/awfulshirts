@@ -2,7 +2,7 @@
 /* Define basic footer size and background as well as basic layout */
 footer {
     min-height: 32px;
-    background-color: var(--air-superiority-blue);
+    background-color: var(--secondary);
 
     grid-template-areas: "main" "copyright";
 }
