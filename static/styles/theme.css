@@ -1,3 +1,70 @@
+
+@font-face {
+    font-family: "Summary Notes";
+    src: url("/assets/fonts/SummaryNotes-Regular.eot");
+    src: url("/assets/fonts/SummaryNotes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/SummaryNotes-Regular.woff2") format("woff2"),
+    url("/assets/fonts/SummaryNotes-Regular.woff") format("woff"),
+    url("/assets/fonts/SummaryNotes-Regular.ttf") format("truetype"),
+    url("/assets/fonts/SummaryNotes-Regular.svg#SummaryNotes-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KG HAPPY';
+    src: url('/assets/fonts/KGHAPPY.eot');
+    src: url('/assets/fonts/KGHAPPY.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/KGHAPPY.woff2') format('woff2'),
+    url('/assets/fonts/KGHAPPY.woff') format('woff'),
+    url('/assets/fonts/KGHAPPY.ttf') format('truetype'),
+    url('/assets/fonts/KGHAPPY.svg#KGHAPPY') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KG HAPPY Solid';
+    src: url('/assets/fonts/KGHAPPYSolid.eot');
+    src: url('/assets/fonts/KGHAPPYSolid.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/KGHAPPYSolid.woff2') format('woff2'),
+    url('/assets/fonts/KGHAPPYSolid.woff') format('woff'),
+    url('/assets/fonts/KGHAPPYSolid.ttf') format('truetype'),
+    url('/assets/fonts/KGHAPPYSolid.svg#KGHAPPYSolid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chewy';
+    src: url('/assets/fonts/Chewy.eot');
+    src: url('/assets/fonts/Chewy.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Chewy.woff2') format('woff2'),
+    url('/assets/fonts/Chewy.woff') format('woff'),
+    url('/assets/fonts/Chewy.ttf') format('truetype'),
+    url('/assets/fonts/Chewy.svg#Chewy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald.eot');
+    src: url('/assets/fonts/Oswald.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Oswald.woff2') format('woff2'),
+    url('/assets/fonts/Oswald.woff') format('woff'),
+    url('/assets/fonts/Oswald.ttf') format('truetype'),
+    url('/assets/fonts/Oswald.svg#Oswald') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
     --color-text-dark: #333745;
     --color-text-bright: white;
@@ -12,5 +79,13 @@
     --indigo: #9883E5;
     --indigo-secondary: #AFA2FF;
     --space: #302F4D;
+    --delft-black: #23395B;
+    --old-lace: #FFF4E4;
+    --peach: #FEC196;
+    --cadet-gray: #A2AEBB;
+    --platinum: #DFE0E2;
+    --violet: #DAC4F7;
 
+
+    --corner-rounding: 10px;
 }

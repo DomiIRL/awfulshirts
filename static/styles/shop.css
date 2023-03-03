@@ -1,0 +1,74 @@
+
+.content_card.shop_card {
+    background-color: var(--peach);
+
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.shop_card h1 {
+    font-size: 400%;
+}
+
+.shop_card .shop_grid {
+    width: min(100%, 1500px);
+    min-height: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.shop_card .shop_item {
+    position: relative;
+    z-index: 1;
+
+    width: 350px;
+    height: 350px;
+
+    /* Round corners */
+    border-radius: var(--corner-rounding);
+
+    /* Format background correctly */
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s ease;
+}
+
+.shop_card .shop_item:hover {
+    /* Focus onto item */
+    z-index: 2;
+
+    scale: 1.1;
+}
+
+.shop_item_new:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 30px;
+
+    background-color: var(--red);
+    border-radius: 0 0 var(--corner-rounding) var(--corner-rounding);
+
+    color: var(--color-text-bright);
+    font-size: 1.5rem;
+    content: "New";
+
+    /* Completely center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

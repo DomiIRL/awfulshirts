@@ -8,5 +8,3 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-#    volumes:
-#      - "./static:/usr/share/nginx/html"

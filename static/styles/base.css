@@ -8,10 +8,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'poppins', monospace, sans-serif;
+    font-family: 'Summary Notes', monospace, sans-serif;
+    font-size: 110%;
     list-style-type: none;
     text-decoration: none;
     color: var(--color-text-dark);
+}
+
+/* Apply headings font */
+h1, h2, h3 {
+    font-family: 'KG HAPPY', monospace, sans-serif;
+    font-weight: normal;
 }
 
 /* Apply default properties to body */
@@ -33,7 +40,7 @@ main {
     grid-area: main;
 
     /* Make websites height equal to screen height */
-    min-height: calc(100vh - 64px - 92px); /* Values are from header and footer */
+    /*min-height: calc(100vh - 64px - 122px); !* Values are from header and footer *!*/
 }
 
 footer {
@@ -60,7 +67,7 @@ main {
 
 /* Class Utilization */
 
-/* Maskot background image */
+/* Mascot background image */
 .img_mascot {
     width: 300px;
     height: 320px;

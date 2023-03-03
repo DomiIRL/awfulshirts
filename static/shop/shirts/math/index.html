@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<!--	Container where navbar will be injected		-->
+<nav id="inject_navbar"></nav>
+
+<!--	Main Content	-->
+<main id="inject_content"></main>
+
+<!--	Container where footer will be injected		-->
+<footer id="inject_footer"></footer>
+
+</body>
+<!--	Execute template injector	-->
+<script src="/src/baseloader.js"></script>
+<script src="/src/item.js"></script>
+<script>
+    injectShopItemContent("4 out of 3 people struggle with Math Joke T-Shirt", "€19.95", "/assets/content/shirts/math.png", () => {
+        injectSmallImage("/assets/content/shirts/sizes.png")
+        injectSizeSetting();
+    });
+</script>
+</html>

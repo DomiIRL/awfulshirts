@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+/* No smooth font for improved reading of legally important text */
+.content_card * {
+    font-family: monospace, sans-serif;
+}
+
 .contact_card {
     width: auto;
     max-width: 70%;
@@ -16,6 +21,8 @@
     flex-direction: column;
     gap: 30px;
 }
+
+
 
 .contact_card h1 { /* h1 always only exists once on a page */
     text-align: center;

@@ -22,7 +22,7 @@ nav #nav_content {
     position: relative;
 
     /* Define size of navbar content for centered navbar on larger screens */
-    width: max(70%, 1200px);
+    width: min(100%, 1200px);
     height: 100%;
 
     /* Add padding for all navbar contents */
@@ -61,28 +61,29 @@ nav #navigation {
 
 nav #navigation a {
     /* Set navigation links text size */
-    font-size: 1.5rem
+    font-size: 2rem;
 }
 
-@media screen and (max-width: 1000px) {
+/* Old responsive design for medium size screens */
+/*@media screen and (max-width: 0px) {*/
 
-    /* Change banner image to favicon to save space */
-    nav #nav_logo {
-        height: 60px;
-        width: auto;
-        aspect-ratio: 1 / 1;
+/*    !* Change banner image to favicon to save space *!*/
+/*    nav #nav_logo {*/
+/*        height: 60px;*/
+/*        width: auto;*/
+/*        aspect-ratio: 1 / 1;*/
 
-        background-image: url("/assets/favicon.png");
-    }
+/*        background-image: url("/assets/favicon.png");*/
+/*    }*/
 
-    /* Change navbar links layout to scale the gaps automatically */
-    nav #navigation {
-        justify-content: space-evenly;
-    }
+/*    !* Change navbar links layout to scale the gaps automatically *!*/
+/*    nav #navigation {*/
+/*        justify-content: space-evenly;*/
+/*    }*/
 
-}
+/*}*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
 
     /* Hide logo to get more navbar space */
     nav #nav_logo {
@@ -91,7 +92,7 @@ nav #navigation a {
 
     /* Decrease text size to get more space */
     nav #navigation a {
-        font-size: 1.3rem
+        font-size: 2.5rem
     }
 
 }
