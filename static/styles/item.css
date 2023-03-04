@@ -49,7 +49,7 @@
     grid-area: images;
 
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
 }
 
 .item_showcase_images .big_image {
@@ -70,12 +70,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
 .small_images .small_image {
-    width: 60%;
+    width: 80%;
     height: auto;
     aspect-ratio: 1 / 1;
 
