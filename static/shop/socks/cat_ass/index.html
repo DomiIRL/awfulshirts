@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<!--	Container where navbar will be injected		-->
+<nav id="inject_navbar"></nav>
+
+<!--	Main Content	-->
+<main id="inject_content"></main>
+
+<!--	Container where footer will be injected		-->
+<footer id="inject_footer"></footer>
+
+</body>
+<!--	Execute template injector	-->
+<script src="/src/baseloader.js"></script>
+<script src="/src/item.js"></script>
+<script>
+    injectShopItemContent("Sexy Cat Ass Socks Multicolor", "€7.95", "/assets/content/socks/cat_ass.png", () => {
+        injectSmallImage("/assets/content/socks/cat_ass_real.png")
+        injectSmallImage("/assets/content/socks/cat_ass_green.png")
+        injectSmallImage("/assets/content/socks/cat_ass_purple.png")
+        injectSetting(`
+         <label>Farbe*</label>
+         <select id="setting_size">
+          <option>Farbe Auswählen</option>
+          <option value="orange">Orange</option>
+          <option value="green">Grün</option>
+          <option value="purple">Lila</option>
+        </select>
+    `)
+    });
+</script>
+</html>

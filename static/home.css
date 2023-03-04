@@ -39,7 +39,7 @@
 
     filter: drop-shadow(0 0 15px #000);
 
-    transition: transform 0.3s ease, scale 0.3s ease, filter 0.2s ease;
+    transition: all 0.6s ease;
 }
 
 .collection_card .image_preview:nth-child(1) {
@@ -200,6 +200,10 @@
     /* Round corners */
     border-radius: var(--corner-rounding);
 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
     transition: scale 0.3s ease;
 }
 
@@ -209,25 +213,33 @@
 
 .grid_card .grid_item:nth-child(1) {
     grid-area: small1;
+
     background-color: var(--indigo);
+    background-image: url("/assets/content/shirts/print.png");
 }
 
 .grid_card .grid_item:nth-child(2) {
     grid-area: small2;
 
     background-color: var(--sunset);
+    background-image: url("/assets/content/hoodies/tcp.png");
 }
 
 .grid_card .grid_item:nth-child(3) {
     grid-area: tall;
 
     background-color: var(--indigo-secondary);
+    background-image: url("/assets/content/socks/cat_ass_real.png");
+    background-size: cover;
 }
 
 .grid_card .grid_item:nth-child(4) {
     grid-area: wide;
 
     background-color: var(--secondary);
+    background-image: url("/assets/content/mugs/facebook_mom.png");
+    background-size: cover;
+    background-position: 50% 62%;
 }
 
 @media screen and (max-width: 1400px) {

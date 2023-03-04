@@ -32,6 +32,11 @@
         padding: 0 30px;
     }
 
+    .item_showcase_images {
+        margin-top: 10%;
+    }
+
+
     .item_showcase .item_showcase_descriptions {
         margin-left: 14%;
     }
@@ -44,10 +49,12 @@
     grid-area: images;
 
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
 }
 
 .item_showcase_images .big_image {
+    height: auto;
+    aspect-ratio: 1 / 1;
 
     border-radius: var(--corner-rounding);
     cursor: pointer;
@@ -68,7 +75,7 @@
 }
 
 .small_images .small_image {
-    width: 80%;
+    width: 60%;
     height: auto;
     aspect-ratio: 1 / 1;
 
@@ -148,12 +155,11 @@
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .settings label {
     font-size: 80%;
-    margin-bottom: 5px;
 }
 
 .settings select {
@@ -167,7 +173,11 @@
     background-color: var(--sunset);
     color: var(--color-text-dark);
 
+    padding-left: 7px;
+
     transition: filter 0.3s ease;
+
+    margin-bottom: 10px;
 }
 
 .settings select:hover {

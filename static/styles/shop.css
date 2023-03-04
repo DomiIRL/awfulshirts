@@ -72,3 +72,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.shop_item_variants:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 30px;
+
+    background-color: var(--violet);
+    border-radius: 0 0 var(--corner-rounding) var(--corner-rounding);
+
+    color: var(--color-text-bright);
+    font-size: 1.5rem;
+    content: "Varianten";
+
+    /* Completely center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
