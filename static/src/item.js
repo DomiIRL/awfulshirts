@@ -1,6 +1,5 @@
 
 function injectShopItemContent(title, price, image, afterInject = () => {}) {
-    injectShopItemStyle();
     fetch("/templates/item.html")
         .then(response => response.text())
         .then(text => {
@@ -37,14 +36,6 @@ function injectSizeSetting() {
 
 function injectSetting(option) {
     document.getElementById("inject_settings").insertAdjacentHTML("afterbegin", `${option}`)
-}
-
-function injectShopItemStyle() {
-    const style = document.createElement("link");
-    style.type = "text/css"
-    style.rel = "stylesheet"
-    style.href = "/styles/item.css"
-    document.head.appendChild(style);
 }
 
 // End Injecting
