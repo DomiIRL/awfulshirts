@@ -134,6 +134,18 @@
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 2000px) {
+
+    .collection_card .image_preview {
+        scale: 0.9;
+    }
+
+    .collection_card .content_images:hover > .image_preview {
+        scale: 1.1;
+    }
+
+}
+
 @media screen and (max-width: 1400px) {
 
     .collection_card.collection_card {
