@@ -220,7 +220,7 @@
 }
 
 .grid_card .grid_item:hover {
-    scale: 1.03;
+    scale: 1.05;
 }
 
 .grid_card .grid_item:nth-child(1) {
