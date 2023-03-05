@@ -12,7 +12,7 @@ The shop aims at selling merchandise with "funny" jokes.
 Most of the website is made via plain html and css, minor js was also used for injecting navbar and footer.
 
 Since its only html files it will not manage routing so there is no 404 or other error pages.
-While it consists of html files it will not work locally without a webserver.
+While it consists of html files it will not work locally without a webserver since absolute paths are being used.
 
 The website is automatically published to github pages via a static deploy workflow.
 Website Demo is reachable under https://awfulshirts.kxmischesdomi.me (Hopefully still up for you)
