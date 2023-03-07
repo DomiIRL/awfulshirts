@@ -284,12 +284,13 @@
 }
 
 .slideshow_card .slideshow_box {
-    width: min(90%, 1600px);
+    width: min(70%, 1300px);
     height: auto;
     aspect-ratio: 16 / 9;
 
-    display: grid; /* Make child take full container size */
+    border-radius: var(--corner-rounding);
 
+    display: grid; /* Make child take full container size */
     overflow: hidden;
 }
 
