@@ -7,7 +7,7 @@ This is a frontend school project for an imagined online shop.
 The shop aims at selling merchandise with "funny" jokes.
 
 
-### Technologies
+## Technologies
 
 Most of the website is made via plain html and css, minor js was also used for injecting navbar and footer.
 
@@ -18,6 +18,30 @@ The website is automatically published to github pages via a static deploy workf
 Website Demo is reachable under https://awfulshirts.kxmischesdomi.me (Hopefully still up for you)
 
 In addition to github pages there is also a premade docker compose and dockerfile to deploy the page into a container out of the box.
+
+## Setup
+
+### Docker
+
+With Compose:
+```
+1. Clone Repository
+2. Run "docker compose up -d"
+```
+
+Without Compose:
+```
+Currently not possible
+```
+
+### XAMPP
+
+To set up xampp:
+```
+1. Clone Repository
+2. Open httpd.conf in the apache webserver
+3. Set "DocumentRoot" to your cloned repository + static subfolder
+```
 
 ## Folder Structure
 
