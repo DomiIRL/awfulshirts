@@ -6,6 +6,8 @@ This is a frontend school project for an imagined online shop.
 
 The shop aims at selling merchandise with "funny" jokes.
 
+#### I do not own any of the content shown on the website. It is a completely fun project and is not to be taken seriously!
+
 
 ## Technologies
 
