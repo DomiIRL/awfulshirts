@@ -42,7 +42,7 @@ To set up xampp:
 ```
 1. Clone Repository
 2. Open httpd.conf in the apache webserver
-3. Set "DocumentRoot" to your cloned repository + "static" subfolder
+3. Set "DocumentRoot" and "Directory" below that to your cloned repository + "static" subfolder
 ```
 
 ## Folder Structure
