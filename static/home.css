@@ -148,6 +148,18 @@
 
 @media screen and (max-width: 1600px) {
 
+    .collection_card .image_preview {
+        scale: 0.8;
+    }
+
+    .collection_card .content_images:hover > .image_preview {
+        scale: 0.9;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
     .collection_card.collection_card {
         grid-template-areas: "description" "preview";
         grid-template-columns: 1fr;
