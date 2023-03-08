@@ -66,6 +66,15 @@ main {
     min-height: 1080px;
 }
 
+/* Default element styles */
+
+#contact_form button,
+#contact_form input,
+#contact_form textarea {
+    border-radius: var(--border-radius);
+    border: none;
+}
+
 /* Class Utilization */
 
 /* Mascot background image */

@@ -1,34 +1,52 @@
+/* Add padding and background to text content */
 .content_card {
     background-color: var(--pink);
 
-    display: flex; /* using flex for centering div */
-    align-items: center;
-    justify-content: center;
-}
+    padding: 20px 50px 50px 50px;
 
-/* No smooth font for improved reading of legally important text */
-.content_card * {
-    font-family: monospace, sans-serif;
+    min-height: min-content;
 }
 
 .contact_card {
-    width: auto;
-    max-width: 70%;
-    height: 95%;
-    aspect-ratio: 1 / 1.5;
+    width: 100%;
 
-    display: flex; /* One dimensional text layout could be replaced with margins instead of gap without flex */
+    display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
+.content_card a {
+    text-decoration: underline;
+}
 
-
-.contact_card h1 { /* h1 always only exists once on a page */
+.content_card h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 300%;
+
+    margin-bottom: 30px;
 }
 
-.contact_type h3 {
-    margin-bottom: 5px;
+#contact_form {
+    width: min(90%, 800px);
+
+    display: grid;
+    grid-template-areas: "mail" "subject" "comment";
+    gap: 20px;
+}
+
+#contact_form .section {
+    display: grid;
+}
+
+#contact_form .email_section {
+    grid-area: mail;
+}
+
+#contact_form .subject_section {
+    grid-area: subject;
+}
+
+#contact_form .comment_section {
+    grid-area: comment;
 }

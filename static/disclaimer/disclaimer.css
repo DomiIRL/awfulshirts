@@ -9,7 +9,7 @@
 }
 
 /* No smooth font for improved reading of legally important text */
-.content_card p, .content_card a, .content_card span {
+.content_card p, .content_card a {
     font-family: monospace, sans-serif;
 }
 

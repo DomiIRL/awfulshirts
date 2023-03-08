@@ -35,7 +35,7 @@
     height: 350px;
 
     /* Round corners */
-    border-radius: var(--corner-rounding);
+    border-radius: var(--border-radius);
 
     /* Format background correctly */
     background-color: white;
@@ -61,7 +61,7 @@
     height: 30px;
 
     background-color: var(--red);
-    border-radius: 0 0 var(--corner-rounding) var(--corner-rounding);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 
     color: var(--color-text-bright);
     font-size: 1.5rem;
@@ -81,7 +81,7 @@
     height: 30px;
 
     background-color: var(--violet);
-    border-radius: 0 0 var(--corner-rounding) var(--corner-rounding);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 
     color: var(--color-text-bright);
     font-size: 1.5rem;
