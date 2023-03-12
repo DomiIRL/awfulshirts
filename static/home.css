@@ -385,6 +385,34 @@
     overflow: hidden;
 }
 
+.slideshow_card .slideshow_indicator {
+    position: absolute;
+    z-index: 1;
+
+    border-radius: var(--border-radius) var(--border-radius) var(--border-radius) 0;
+
+    height: 10px;
+    width: 0;
+    background-color: var(--delft-black);
+
+    animation: slideshow_indicator 50s linear infinite;
+}
+
+@keyframes slideshow_indicator {
+    0% {
+        width: 0;
+    }
+
+    99% {
+        width: min(70%, 1300px); /* 100% is complete body width so box with has to do */
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
 .slideshow_card .slideshow {
     position: relative; /* Make slideshow movable */
     width: 500%; /* Slideshow width = image count * 100% */
@@ -393,7 +421,6 @@
     display: flex; /* Align items horizontal */
 
     animation: slideshow 50s ease infinite;
-
 }
 
 .slideshow_card .slideshow_item {
@@ -403,7 +430,7 @@
 
     background-color: white;
     background-image: url("/assets/content/socks/cat_ass_real.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
