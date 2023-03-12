@@ -1,0 +1,83 @@
+
+.notification_box {
+    height: 400px;
+    width: 300px;
+
+    position: fixed;
+    z-index: 100;
+    top: calc(50vh - (400px / 2));
+    right: 0;
+
+    /* Define content and hide button areas */
+    display: grid;
+    grid-template-areas: "content" "hide";
+    grid-template-rows: 1fr auto;
+
+    /* Align all text at center */
+    text-align: center;
+}
+
+.notification_box .box_content {
+    grid-area: content;
+
+    height: auto;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+.notification_box h3 {
+    border-bottom: var(--secondary);
+
+    margin-bottom: 10px;
+}
+
+.notification_box .box_mascot {
+    flex-grow: 1;
+}
+
+.notification_box .hide_label {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+
+    /* Align vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*  Set text and background color  */
+    color: var(--color-text-bright);
+
+    background-color: var(--red);
+}
+
+.notification_box .box_hide:hover ~ .hide_label {
+    color: var(--color-text-dark);
+}
+
+.notification_box .box_hide {
+    position: relative;
+    z-index: 200;
+
+    grid-area: hide;
+
+    height: 50px;
+
+    appearance: none;
+
+    border: none;
+}
+
+/* Hide content and checkbox itself when clicked */
+.notification_box .box_hide:checked,
+.notification_box .box_hide:checked ~ * {
+    display: none;
+}

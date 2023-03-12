@@ -2,6 +2,7 @@
 @import "scrollbar.css";
 @import "navbar.css";
 @import "footer.css";
+@import "notification_box.css";
 
 /* Apply non inherited properties to all elements */
 * {
