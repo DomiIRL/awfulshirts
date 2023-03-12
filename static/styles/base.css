@@ -26,11 +26,13 @@ h1, h2, h3 {
 /* Apply default properties to body */
 body {
     width: 100%;
+    min-height: 100%;
     overflow-x: hidden;
 
     /* Define default main website layout */
     display: grid;
     grid-template-areas: "nav" "main" "foot";
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Define default layout elements */
