@@ -57,11 +57,12 @@ project
     │   │   ├───hoodies
     │   │   ├───mugs
     │   │   ├───shirts
-    │   │   └───socks
+    │   │   ├───socks
+    │   │   └───sticker
     │   └───fonts
     ├───contact
+    ├───disclaimer
     ├───imprint
-    ├───privacy
     ├───shop
     │   ├───hoodies
     │   │   ├───async
@@ -71,24 +72,35 @@ project
     │   │   ├───tcp
     │   │   └───weird
     │   ├───mugs
-    │   │   └───facebook_mom
+    │   │   ├───facebook_mom
+    │   │   ├───harold
+    │   │   └───violence
     │   ├───shirts
     │   │   ├───alcohol
     │   │   ├───chemistry
+    │   │   ├───chicken_game
     │   │   ├───coffee_programmer
     │   │   ├───html
     │   │   ├───java
     │   │   ├───math
     │   │   ├───print
+    │   │   ├───rabbit_duck
     │   │   ├───reaction
     │   │   ├───space
+    │   │   ├───still_talking
     │   │   ├───tcp
+    │   │   ├───wait_what
     │   │   ├───weed
     │   │   └───wizard
-    │   └───socks
-    │       ├───cat_ass
-    │       ├───dad_joke
-    │       └───true
+    │   ├───socks
+    │   │   ├───cat_ass
+    │   │   ├───dad_joke
+    │   │   └───true
+    │   └───sticker
+    │       ├───dogtor
+    │       ├───late
+    │       ├───turtle
+    │       └───unsupervised
     ├───src
     ├───styles
     └───templates
