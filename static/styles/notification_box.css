@@ -41,7 +41,7 @@
     background-color: white;
 }
 
-.notification_box h3 {
+.notification_box h5 {
     /* Set title underline */
     border-bottom: solid var(--color-text-dark);
     border-bottom-width: thin;
