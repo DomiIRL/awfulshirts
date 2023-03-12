@@ -73,6 +73,10 @@
     border-bottom: 2px solid var(--color-text-bright);
 }
 
+.notification_box .box_hide:hover {
+    cursor: pointer;
+}
+
 /* Modify child of label since checkbox container is on top of label */
 .notification_box .box_hide:hover ~ .hide_label .underline_animation:after {
     width: 100%;
@@ -82,9 +86,6 @@
 
     /*  Set text color  */
     color: var(--color-text-bright);
-}
-
-.notification_box .box_hide:hover ~ .hide_label {
 }
 
 .notification_box .box_hide {
