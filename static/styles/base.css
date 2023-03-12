@@ -23,6 +23,23 @@ h1, h2, h3 {
     font-weight: normal;
 }
 
+/* Apply sizes for differnt fonts */
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
 /* Apply default properties to body */
 body {
     width: 100%;

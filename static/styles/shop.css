@@ -11,10 +11,6 @@
     gap: 20px;
 }
 
-.shop_card h1 {
-    font-size: 400%;
-}
-
 .shop_card .shop_grid {
     width: min(100%, 1500px);
     min-height: 80%;
