@@ -1,5 +1,5 @@
 /* Add padding and background to text content */
-.content_card {
+.contact_card {
     background-color: var(--pink);
 
     padding: 20px 50px 50px 50px;
@@ -7,7 +7,7 @@
     min-height: min-content;
 }
 
-.contact_card {
+.contact_content {
     width: 100%;
 
     display: flex;

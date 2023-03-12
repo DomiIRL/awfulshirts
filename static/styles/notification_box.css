@@ -23,8 +23,14 @@
 .notification_box .box_content {
     grid-area: content;
 
+    /* Make moveable */
+    position: relative;
+
     /* Add padding for all content */
     padding: 10px;
+
+    /* Add smooth borders for top corner */
+    border-radius: var(--border-radius) 0 0 0;
 
     /* Give elements possibility to interact with parent for sizing */
     display: flex;
@@ -58,6 +64,9 @@
 
     /* Set label height */
     height: 50px;
+
+    /* Add smooth borders for bottom corner */
+    border-radius: 0 0 0 var(--border-radius);
 
     /* Align content vertically */
     display: flex;
@@ -102,8 +111,17 @@
     appearance: none;
 }
 
-/* Hide content and checkbox itself when clicked */
+/* Closing logic */
+
+/* Create transition for closing */
+.notification_box * {
+    transition: all 0.5s cubic-bezier(0.4, -0.86, 1, 0.99);
+    left: 0;
+}
+
+/* Hide children and checkbox itself when clicked */
 .notification_box .box_hide:checked,
 .notification_box .box_hide:checked ~ * {
-    display: none;
+    left: 100%;
 }
+
