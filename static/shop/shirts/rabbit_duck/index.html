@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Awfulshirts</title>
+	<link type="image/x-icon" rel="icon" href="/assets/favicon.png">
+	<link type="text/css" rel="stylesheet" href="/styles/base.css">
+	<link type="text/css" rel="stylesheet" href="/styles/item.css">
+</head>
+<body>
+
+<!--	Container where navbar will be injected		-->
+<nav id="inject_navbar"></nav>
+
+<!--	Main Content	-->
+<main id="inject_content"></main>
+
+<!--	Container where footer will be injected		-->
+<footer id="inject_footer"></footer>
+
+</body>
+<!--	Execute template injector	-->
+<script src="/src/baseloader.js"></script>
+<script src="/src/item.js"></script>
+<script>
+    injectShopItemContent("Rabbit Duck Funny Shirt", "€25.95", "/assets/content/shirts/rabbit_duck.png", () => {
+        injectSmallImage("/assets/content/sizes.png")
+        injectSizeSetting();
+    });
+</script>
+</html>
