@@ -1,12 +1,15 @@
 
 .notification_box {
-    height: 400px;
+    /* Set box size */
+    height: calc(400px);
     width: 300px;
 
+    /* Set box on the right side */
     position: fixed;
     z-index: 100;
-    top: calc(50vh - (400px / 2));
     right: 0;
+    /* Center vertically */
+    top: calc(50vh - (400px / 2));
 
     /* Define content and hide button areas */
     display: grid;
@@ -20,60 +23,82 @@
 .notification_box .box_content {
     grid-area: content;
 
-    height: auto;
-
+    /* Add padding for all content */
     padding: 10px;
 
+    /* Give elements possibility to interact with parent for sizing */
     display: flex;
     flex-direction: column;
     overflow: hidden;
 
+    /* Set content background */
     background-color: white;
 }
 
 .notification_box h3 {
-    border-bottom: var(--secondary);
+    /* Set title underline */
+    border-bottom: solid var(--color-text-dark);
+    border-bottom-width: thin;
 
+    /* Add margin to other elements */
     margin-bottom: 10px;
 }
 
 .notification_box .box_mascot {
+    /* Take up the rest of the space available */
     flex-grow: 1;
 }
 
 .notification_box .hide_label {
     position: absolute;
 
+    /* Set label on top of checkbox */
     bottom: 0;
     width: 100%;
+
+    /* Set label height */
     height: 50px;
 
-    /* Align vertically */
+    /* Align content vertically */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /*  Set text and background color  */
-    color: var(--color-text-bright);
-
+    /*  Set background color  */
     background-color: var(--red);
 }
 
+/* Change color of animation */
+.notification_box .underline_animation:after {
+    border-bottom: 2px solid var(--color-text-bright);
+}
+
+/* Modify child of label since checkbox container is on top of label */
+.notification_box .box_hide:hover ~ .hide_label .underline_animation:after {
+    width: 100%;
+}
+
+.notification_box .hide_label span {
+
+    /*  Set text color  */
+    color: var(--color-text-bright);
+}
+
 .notification_box .box_hide:hover ~ .hide_label {
-    color: var(--color-text-dark);
 }
 
 .notification_box .box_hide {
+    grid-area: hide;
+
+    /* Set checkbox on top of label */
     position: relative;
     z-index: 200;
 
-    grid-area: hide;
-
+    /* Set checkbox height */
     height: 50px;
 
+    /* Remove default checkbox formatting */
     appearance: none;
-
-    border: none;
 }
 
 /* Hide content and checkbox itself when clicked */
