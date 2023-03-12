@@ -36,7 +36,8 @@
 }
 
 #contact_form .section {
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #contact_form .email_section {
@@ -49,4 +50,25 @@
 
 #contact_form .comment_section {
     grid-area: comment;
+}
+
+#contact_form input {
+    height: 41px;
+    padding: 5px 5px 0 5px;
+}
+
+/* Animation */
+
+#contact_form label {
+    position: relative;
+
+    top: 45px;
+    left: 5px;
+
+    transition: top 0.15s ease;
+}
+
+#contact_form input:focus + label,
+#contact_form textarea:focus + label {
+    top: 0;
 }
