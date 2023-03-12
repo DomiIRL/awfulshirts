@@ -65,10 +65,13 @@
     top: 45px;
     left: 5px;
 
+    cursor: text;
+
     transition: top 0.15s ease;
 }
 
 #contact_form input:focus + label,
 #contact_form textarea:focus + label {
+    cursor: default;
     top: 0;
 }
