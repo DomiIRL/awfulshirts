@@ -62,7 +62,7 @@
 
     cursor: text;
 
-    transition: top 0.15s ease;
+    transition: all 0.15s ease;
 }
 
 #contact_form input:valid + label,
@@ -71,4 +71,10 @@
 #contact_form textarea:focus + label {
     cursor: default;
     top: 0;
+    color: white;
+
+}
+
+#contact_form input:valid + label,
+#contact_form textarea:valid + label {
 }

@@ -93,12 +93,17 @@ main {
 /* Default element styles */
 
 button,
-input {
+input[type="text"],
+input[type="button"],
+input[type="password"],
+input[type="email"] {
     height: 41px;
     line-height: 30px;
 }
 
-input,
+input[type="text"],
+input[type="password"],
+input[type="email"],
 textarea {
     border: none;
     background: none;
@@ -111,6 +116,7 @@ textarea {
     resize: none;
 }
 
+input[type="button"],
 button {
     position: relative;
 
@@ -118,14 +124,15 @@ button {
     border-radius: 25px;
     background-color: black;
 
+    cursor: pointer;
+
     color: white;
 
     transition: all 0.2s;
-
-
-
 }
 
+input[type="button"]:hover,
+input[type="button"]:active,
 button:hover,
 button:active {
     transform: translateY(-3px);

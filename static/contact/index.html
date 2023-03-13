@@ -23,18 +23,18 @@
 
 			<form id="contact_form" action="mailto:contact@awfulshirts.com" method="GET" enctype="text/plain">
 				<div class="section email_section">
-					<input name="cc" id="email" required>
-					<label for="email">E-Mail</label>
+					<input type="text" name="cc" id="email" required>
+					<label class="no_select" for="email">E-Mail</label>
 				</div>
 				<div class="section subject_section">
-					<input name="subject" id="subject" required>
-					<label for="subject">Betreff</label>
+					<input type="text" name="subject" id="subject" required>
+					<label class="no_select" for="subject">Betreff</label>
 				</div>
 				<div class="section comment_section">
 					<textarea name="body" cols="3" rows="3" id="comment" required></textarea>
-					<label for="comment">Comment</label>
+					<label class="no_select" for="comment">Comment</label>
 				</div>
-				<button type="submit">Senden</button>
+				<button class="no_select" type="submit">Senden</button>
 			</form>
 
 		</div>
