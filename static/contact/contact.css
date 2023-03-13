@@ -53,12 +53,17 @@
 
 #contact_form input {
     height: 41px;
-    padding: 5px 5px 0 5px;
+    padding: 5px;
+}
+
+#contact_form textarea {
+    padding: 5px;
 }
 
 /* Animation */
 
-#contact_form label {
+#contact_form textarea ~ label,
+#contact_form input ~ label {
     position: relative;
 
     top: 45px;
@@ -69,6 +74,8 @@
     transition: top 0.15s ease;
 }
 
+#contact_form input:valid + label,
+#contact_form textarea:valid + label,
 #contact_form input:focus + label,
 #contact_form textarea:focus + label {
     cursor: default;
