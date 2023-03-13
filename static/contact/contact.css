@@ -65,16 +65,21 @@
     transition: all 0.15s ease;
 }
 
-#contact_form input:valid + label,
-#contact_form textarea:valid + label,
+#contact_form input:not(:placeholder-shown) + label,
+#contact_form textarea:not(:placeholder-shown) + label,
 #contact_form input:focus + label,
 #contact_form textarea:focus + label {
     cursor: default;
     top: 0;
     color: white;
-
 }
 
-#contact_form input:valid + label,
-#contact_form textarea:valid + label {
+#contact_form input:not(:placeholder-shown):invalid + label,
+#contact_form textarea:not(:placeholder-shown):invalid + label {
+    color: var(--red);
+}
+
+#contact_form input:not(:placeholder-shown):valid + label,
+#contact_form textarea:not(:placeholder-shown):valid + label {
+    color: var(--green);
 }
