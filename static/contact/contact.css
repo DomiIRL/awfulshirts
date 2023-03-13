@@ -51,15 +51,6 @@
     grid-area: comment;
 }
 
-#contact_form input {
-    height: 41px;
-    padding: 5px;
-}
-
-#contact_form textarea {
-    padding: 5px;
-}
-
 /* Animation */
 
 #contact_form textarea ~ label,
