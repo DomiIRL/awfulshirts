@@ -212,7 +212,6 @@
 }
 
 .sticker_card .content_preview {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,12 +225,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.sticker_card .content_images .image_preview {
-    transition: all 0.2s ease;
+.sticker_card .content_images .content_image {
+    transition: all 0.3s ease;
 }
 
-.sticker_card .content_images .image_preview:hover {
-    scale: 1.1;
+.sticker_card .content_images .content_image:hover {
+    transform: scale(1.2);
 }
 
 .sticker_card .content_images .content_image:nth-of-type(even) {
