@@ -15,7 +15,7 @@
     grid-template-areas:
             "images descriptions"
             "reviews descriptions";
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: auto auto;
     gap: 30px;
 }
@@ -169,8 +169,8 @@
     cursor: pointer;
 
     border-radius: var(--border-radius);
-    border: none;
-    background-color: var(--sunset);
+    /*border: 1px solid black;*/
+    background-color: var(--item-theme);
     color: var(--color-text-dark);
 
     padding-left: 7px;
@@ -181,7 +181,25 @@
 }
 
 .settings select:hover {
-    filter: brightness(105%);
+    /*filter: brightness(105%);*/
+}
+
+.settings input {
+    border-bottom: var(--item-theme) 4px solid;
+}
+
+.settings .pi {
+    display: grid;
+
+    margin-bottom: 10px;
+
+    gap: 50px;
+    grid-template-areas: "first last" "street postal" "country city";
+}
+
+.settings .pi .form_part {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .settings button {

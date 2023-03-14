@@ -105,15 +105,14 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea {
+    position: relative;
+    z-index: 100;
+
     border: none;
     background: none;
     border-bottom: solid black 5px;
     outline: none;
     padding: 5px;
-}
-
-textarea {
-    resize: none;
 }
 
 input[type="button"],
@@ -137,6 +136,38 @@ button:hover,
 button:active {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.label_animation textarea ~ label,
+.label_animation input ~ label {
+    position: relative;
+    z-index: 1;
+
+    top: 41px;
+    left: 5px;
+
+    cursor: text;
+
+    transition: all 0.15s ease;
+}
+
+.label_animation input:not(:placeholder-shown) + label,
+.label_animation textarea:not(:placeholder-shown) + label,
+.label_animation input:focus + label,
+.label_animation textarea:focus + label {
+    cursor: default;
+    top: 0;
+    color: white;
+}
+
+.label_animation input:not(:placeholder-shown):invalid + label,
+.label_animation textarea:not(:placeholder-shown):invalid + label {
+    color: var(--red);
+}
+
+.label_animation input:not(:placeholder-shown):valid + label,
+.label_animation textarea:not(:placeholder-shown):valid + label {
+    color: var(--green);
 }
 
 /* Class Utilization */

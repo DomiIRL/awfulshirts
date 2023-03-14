@@ -70,6 +70,7 @@
     --color-text-bright: white;
     --primary: #b2ddf7ff;
     --secondary: #769fb6ff;
+    --item-theme: var(--violet);
     --red: #c72b0c;
     --green: #04773B;
     --sunset: #fed99bff;

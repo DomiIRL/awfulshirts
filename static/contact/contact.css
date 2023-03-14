@@ -51,41 +51,12 @@
     grid-area: comment;
 }
 
+textarea {
+    resize: none;
+}
+
 /* Animation */
 
-#contact_form textarea ~ label,
-#contact_form input ~ label {
-    position: relative;
-
-    top: 41px;
-    left: 5px;
-
-    cursor: text;
-
-    transition: all 0.15s ease;
-}
-
 #contact_form textarea ~ label {
-    position: relative;
-
     top: calc(45px * 3);
-}
-
-#contact_form input:not(:placeholder-shown) + label,
-#contact_form textarea:not(:placeholder-shown) + label,
-#contact_form input:focus + label,
-#contact_form textarea:focus + label {
-    cursor: default;
-    top: 0;
-    color: white;
-}
-
-#contact_form input:not(:placeholder-shown):invalid + label,
-#contact_form textarea:not(:placeholder-shown):invalid + label {
-    color: var(--red);
-}
-
-#contact_form input:not(:placeholder-shown):valid + label,
-#contact_form textarea:not(:placeholder-shown):valid + label {
-    color: var(--green);
 }
