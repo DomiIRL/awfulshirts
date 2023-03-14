@@ -186,6 +186,7 @@
 
 .settings input {
     border-bottom: var(--item-theme) 4px solid;
+    width: 100%;
 }
 
 .settings .pi {
