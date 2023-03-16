@@ -155,9 +155,9 @@ button:active {
 .label_animation textarea:not(:placeholder-shown) + label,
 .label_animation input:focus + label,
 .label_animation textarea:focus + label {
-    cursor: default;
-    top: 0;
-    color: white;
+    cursor: default; !important;
+    top: 0; !important;
+    color: white; !important;
 }
 
 .label_animation input:not(:placeholder-shown):invalid + label,

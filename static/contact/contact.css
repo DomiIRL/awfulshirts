@@ -57,6 +57,6 @@ textarea {
 
 /* Animation */
 
-#contact_form textarea ~ label {
+.label_animation textarea ~ label {
     top: calc(45px * 3);
 }
