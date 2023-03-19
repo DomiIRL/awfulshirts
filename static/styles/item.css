@@ -180,10 +180,6 @@
     margin-bottom: 10px;
 }
 
-.settings select:hover {
-    /*filter: brightness(105%);*/
-}
-
 .settings input {
     border-bottom: var(--item-theme) 4px solid;
     width: 100%;
