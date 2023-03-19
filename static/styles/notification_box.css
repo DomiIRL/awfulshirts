@@ -114,14 +114,12 @@
 /* Closing logic */
 
 /* Create transition for closing */
-.notification_box * {
-    transition: all 0.5s cubic-bezier(0.4, -0.86, 1, 0.99);
-    left: 0;
+.notification_box {
+    transition: right 1s cubic-bezier(0.4, -0.4, 1, 1);
+    right: 0;
 }
 
-/* Hide children and checkbox itself when clicked */
-.notification_box .box_hide:checked,
-.notification_box .box_hide:checked ~ * {
-    left: 100%;
+/* Hide complete notification container when checked */
+.notification_box:has(.box_hide:checked) {
+    right: -100%;
 }
-
