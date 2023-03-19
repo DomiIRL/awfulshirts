@@ -44,7 +44,7 @@ Without Compose:
 To set up xampp:
 ```
 1. Clone Repository
-2. Open httpd.conf in the apache webserver
+2. Open "C:\xampp\apache\conf\httpd.conf" in the apache webserver
 3. Set "DocumentRoot" and "Directory" below that to your cloned repository + "static" subfolder
 ```
 
