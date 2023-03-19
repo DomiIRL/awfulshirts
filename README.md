@@ -18,7 +18,7 @@ While it consists of html files it will not work locally without a webserver sin
 Also it is not possible to use it on a webserver with a sub path.
 
 The website is automatically published to github pages via a static deploy workflow.
-Website Demo is reachable under https://awfulshirts.kxmischesdomi.me (Hopefully still up for you)
+Website Demo is reachable under https://awfulshirts.kxmischesdomi.xyz (Hopefully still up for you)
 
 In addition to github pages there is also a premade docker compose and dockerfile to deploy the page into a container out of the box.
 
