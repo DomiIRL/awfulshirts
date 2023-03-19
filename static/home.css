@@ -19,6 +19,14 @@
     align-items: center;
 }
 
+@media screen and (min-width: 2000px) {
+    .collection_card .content_images {
+        position: absolute;
+        right: 400px;
+    }
+
+}
+
 .collection_card .content_images {
     display: flex;
     justify-content: center;
