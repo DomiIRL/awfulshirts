@@ -189,12 +189,13 @@ button:active {
 }
 
 .underline_animation:after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
+
     width: 0;
 
-    content: "";
     border-bottom: 2px solid var(--color-text-dark);
 
     transition: all 0.35s;

@@ -15,6 +15,7 @@ Most of the website is made via plain html and css, minor js was also used for i
 
 Since its only html files it will not manage routing so there is no 404 or other error pages.
 While it consists of html files it will not work locally without a webserver since absolute paths are being used.
+Also it is not possible to use it on a webserver with a sub path.
 
 The website is automatically published to github pages via a static deploy workflow.
 Website Demo is reachable under https://awfulshirts.kxmischesdomi.me (Hopefully still up for you)
@@ -33,7 +34,9 @@ With Compose:
 
 Without Compose:
 ```
-Currently not possible
+1. Clone Respository 
+2. Run "docker build -t awfulshirts ."
+3. Run "docker run -p 80:80 -d unless-stopped awfulshirts"
 ```
 
 ### XAMPP
