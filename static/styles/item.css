@@ -215,19 +215,19 @@
     font-size: 0.5em;
 }
 
-/*.settings .pi {*/
-/*    display: grid;*/
+.settings .pi {
+    display: grid;
 
-/*    margin-bottom: 10px;*/
+    margin-bottom: 10px;
 
-/*    gap: 50px;*/
-/*    grid-template-areas: "first last" "street postal" "country city";*/
-/*}*/
+    gap: 50px;
+    grid-template-areas: "first last" "street postal" "country city";
+}
 
-/*.settings .pi .form_part {*/
-/*    display: flex;*/
-/*    flex-direction: column-reverse;*/
-/*}*/
+.settings .pi .form_part {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 /* Review part */
 
