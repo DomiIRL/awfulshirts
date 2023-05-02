@@ -6,11 +6,6 @@
  *  - navbar.html -> #inject_navbar
  *  - footer.html -> #inject_footer
  *
- * Injected header properties:
- *  - Style: /style/base.css
- *  - Title: Awfulshirts
- *  - Favicon: /assets/favicon.png
- *
  */
 
 function injectNavbar() {
